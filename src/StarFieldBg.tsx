@@ -49,7 +49,7 @@ export const Background: React.FC = () => {
           window.removeEventListener('resize', handleResize);
           window.removeEventListener('mousemove', onMouseMove);
         };
-    })
+    }, [])
     return <canvas ref={canvasRef} className="absolute inset-0 -z-10" />;
 }
 

@@ -8,5 +8,5 @@
 }
 
 body {
-  @apply min-w-[100vw] min-h-[100vh];
+  @apply min-w-[100vw] min-h-[100vh] bg-ctp-base text-ctp-text;
 }

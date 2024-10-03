@@ -20,7 +20,7 @@ export function Links() {
 }
 
 export function HomePage() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const date = new Date();
     const hours = date.getHours();
@@ -32,7 +32,7 @@ export function HomePage() {
     } else if (hours >= 13) {
         compliment = t("goodAfternoon");
     }
-
+    
     return (
         <>
             <Background />
@@ -40,6 +40,11 @@ export function HomePage() {
                 <h1 className="text-ctp-red text-3xl font-bold animate-[fadeIn_2s]">👋 {compliment}</h1>
                 <p className="animate-[fadeIn_2s]">{t("welcome")}</p>
                 <Links />
+                <select className="bg-ctp-base px-2 py-1 border border-ctp-text rounded-md" onChange={(e) => i18n.changeLanguage(e.target.value)} value={i18n.language}>
+                    {[["pt", "Português"], ["en", "English"], ["ja", "日本語"]]
+                        .map((l) => <option value={l[0]}>{l[1]}</option>)
+                    }
+                </select>
             </div>
         </>
     )

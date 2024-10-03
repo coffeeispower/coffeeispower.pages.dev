@@ -6,11 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 
 i18n
     .use(LanguageDetector)
-    .use(resourcesToBackend((language: string, namespace: string) => {
-        const t = import(`./translations/${language}/${namespace}.json`);
-        t.then(console.log)
-        return t;
-    }))
+    .use(resourcesToBackend((language: string, namespace: string) => import(`./translations/${language}/${namespace}.json`)))
     .use(initReactI18next) // passes i18n down to react-i18next
     .init({
         fallbackLng: "pt",
