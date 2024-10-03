@@ -6,11 +6,11 @@
     "links": {
         "selfIntroduction": {
             "title": "自己紹介",
-            "description": "私のこととプログラミング以外の能力"
+            "description": "私のこととプログラミング以外の能力について知る"
         },
         "projects": {
             "title": "プロジェクト",
-            "description": "作ったプロジェクトとオープンソースのプロジェクトの貢献"
+            "description": "作ったプロジェクトとオープンソースのプロジェクトのコントリビューション"
         }
     }
 }
