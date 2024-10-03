@@ -1,0 +1,16 @@
+{
+    "goodMorning": "おはよう!",
+    "goodAfternoon": "こんにちは!",
+    "goodNight": "こんばんは!",
+    "welcome": "ティアグです. 私のウェブサイトへようこそ",
+    "links": {
+        "selfIntroduction": {
+            "title": "自己紹介",
+            "description": "私のこととプログラミング以外の能力"
+        },
+        "projects": {
+            "title": "プロジェクト",
+            "description": "作ったプロジェクトとオープンソースのプロジェクトの貢献"
+        }
+    }
+}

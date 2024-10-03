@@ -1,0 +1,16 @@
+{
+    "goodMorning": "Good morning!",
+    "goodAfternoon": "Good afternoon!",
+    "goodNight": "Good night!",
+    "welcome": "My name is Tiago Dinis. Welcome to my portfolio!",
+    "links": {
+        "selfIntroduction": {
+            "title": "Self Introduction",
+            "description": "Know more about me, my personality and skills outside of programming"
+        },
+        "projects": {
+            "title": "Projects",
+            "description": "Explore some of my projects and contributions to open source projects"
+        }
+    }
+}

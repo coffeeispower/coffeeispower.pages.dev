@@ -1,0 +1,16 @@
+{
+    "goodMorning": "Bom dia!",
+    "goodAfternoon": "Boa tarde!",
+    "goodNight": "Boa noite!",
+    "welcome": "O meu nome é Tiago Dinis. Seja bem-vindo ao meu portfólio!",
+    "links": {
+        "selfIntroduction": {
+            "title": "Introdução pessoal",
+            "description": "Saiba mais sobre mim, a minha personalidade e habilidades fora de programação"
+        },
+        "projects": {
+            "title": "Projetos",
+            "description": "Explore alguns dos meus projetos e contribuições para projetos open source"
+        }
+    }
+}
