@@ -14,5 +14,5 @@ i18n
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
         },
         supportedLngs: ['pt', "en", "ja"],
-        ns: ["home"]
+        ns: ["home", "navbar"]
     });

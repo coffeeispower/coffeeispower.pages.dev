@@ -1,5 +1,5 @@
 import type React from "react";
-import { Background } from "./StarFieldBg";
+import { Background } from "../StarFieldBg";
 import { useTranslation } from "react-i18next";
 
 export function Link(props: React.PropsWithoutRef<{name: string, description: string, link: string}>) {
@@ -12,7 +12,7 @@ export function Link(props: React.PropsWithoutRef<{name: string, description: st
 
 export function Links() {
     return (
-        <div className="flex gap-4 max-w-[90vw] items-center justify-center flex-wrap animate-[fadeIn_2s]">
+        <div className="flex gap-4 max-w-[90vw] items-center justify-center flex-wrap">
             <Link link="/introducao" name="home:links.selfIntroduction.title" description="home:links.selfIntroduction.description"/>
             <Link link="/projetos" name="home:links.projects.title" description="home:links.projects.description"/>
         </div>
@@ -37,8 +37,8 @@ export function HomePage() {
         <>
             <Background />
             <div className='h-screen w-screen flex items-center justify-center flex-col gap-4'>
-                <h1 className="text-ctp-red text-3xl font-bold animate-[fadeIn_2s]">👋 {compliment}</h1>
-                <p className="animate-[fadeIn_2s]">{t("welcome")}</p>
+                <h1 className="text-ctp-red text-3xl font-bold">👋 {compliment}</h1>
+                <p>{t("welcome")}</p>
                 <Links />
                 <select className="bg-ctp-base px-2 py-1 border border-ctp-text rounded-md" onChange={(e) => i18n.changeLanguage(e.target.value)} value={i18n.language}>
                     {[["pt", "Português"], ["en", "English"], ["ja", "日本語"]]
